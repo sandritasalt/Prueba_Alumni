@@ -1,0 +1,162 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+    color: white;
+    font-size: 12px;
+}
+button{
+      background-color: transparent;
+      color: white;
+      border: none;
+      padding: 20px;
+      cursor: pointer;
+      z-index: 10;
+      font-size: 32px;
+      font-weight: 700;
+}
+#prev {
+    left: 0;
+  }
+
+#next {
+    right: 0;
+  }
+hr {
+    border: 1px solid #d9d9d9; 
+    margin: 5% 0; 
+    width: 100%;
+}
+section.education{
+    background-color: #000B3D;
+    width: 100%;
+    height: 75vh;
+	position: absolute;
+	bottom: 0;
+}
+div.boxEducation{
+ background-color: #00A57D;
+ width: 225px;
+ height: 225px;
+ position: absolute;
+ top: -20%;
+left: 15%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+div.boxEducation h2{
+ font-family: 'Times New Roman', Times, serif;
+ font-size: 32px;
+ font-weight: 300;
+ margin: 5%;
+}
+section.education div.infoEducation{
+    padding: 0 10% 0 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+section.education div.infoEducation div.textEducation{
+    width: 25%;
+}
+section.education div.infoEducation div.textEducation span{
+    font-weight: 600;
+}
+section.education div.infoEducation div.carrusel{
+    position: relative;
+    display: inline-flex;
+    overflow: hidden;
+    width: 75%;
+}
+section.education div.infoEducation div.carrusel div.carruselContenedor{
+   display: flex;
+   transition: transform 0.5s ease;
+   width: 100%;
+}
+section.education div.infoEducation div.carrusel div.carruselElement{
+    background-color: white;
+    color: rgb(66, 66, 66);
+    border-radius: 15px;
+    flex: 0 0 25%;
+    margin-right: 3%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 0px 3% 0 3%;
+}
+section.education div.infoEducation div.carrusel div.carruselElement h3{
+    margin-top: 15%;
+}
+
+
+
+@media screen and (max-width: 1050px){
+
+    section.education div.infoEducation div.carrusel div.carruselElement{
+        flex: 0 0 42%;
+    }
+    section.education div.infoEducation{
+        margin-top: 15%;
+    }
+
+
+}
+@media screen and (max-width: 800px){
+
+    div.boxEducation{
+        width: 180px;
+        height: 180px;
+        top: -25%;
+       left: 15%;
+       }
+       div.boxEducation h2{
+        font-size: 26px;
+        font-weight: 300;
+        margin: 5%;
+       }
+       section.education div.infoEducation{
+        padding: 0 5% 0 5%;
+    }
+       section.education div.infoEducation div.textEducation{
+        width: 40%;
+        }
+        section.education div.infoEducation div.carrusel{
+            width: 60%;
+        }
+        h3{
+            font-size: 12px;
+        }
+        .carruselContenedor p{
+            font-size: 11px;
+        }
+
+
+}
+@media screen and (max-width: 550px){
+    
+    section.education div.infoEducation{
+        flex-wrap: wrap;
+    }
+    section.education div.infoEducation div.textEducation{
+        width: 100%;
+        }
+        section.education div.infoEducation div.carrusel{
+            width: 65%;
+        }
+        section.education div.infoEducation div.carrusel div.carruselElement{
+            flex: 0 0 93%;
+        }
+        section.education div.infoEducation div.carrusel{
+            margin-top: 10%;
+        }
+
+
+
+}
